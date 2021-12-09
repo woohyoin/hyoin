@@ -1,0 +1,312 @@
+<!DOCTYPE html> <!-- 22161100 우효인 -->
+<html lang="en" dir="ltr">
+  <head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+
+      @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      body {
+        font-family: 'nanumgothic';
+        background-image : url('./img/bg3.jpg');
+      }
+
+      li {
+        list-style-type: none;
+      }
+
+      header {
+        width: 1920px;
+        height: 100px;
+        margin: 0 auto;
+        margin-top: 30px;
+      }
+
+      #logo {
+        float: left;
+        margin-left: 50px;
+        margin-top: 20px;
+        background-repeat: no-repeat;
+      }
+
+      #menus {
+        float: right;
+      }
+
+      #main_menu {
+        margin-top : 18px;
+        margin-right: 50px;
+        font-family:"nanumgothic";
+        font-size: 20px;
+        font-color: #ffe100;
+        font-weight: bold;
+      }
+
+      #main_menu > li {
+        display: inline-block;
+        margin-left: 70px;
+        position: relative;
+      }
+
+      #main_menu li:hover > a{
+        color: #9C5B36;
+        margin: 0;
+      }
+
+      #main_menu ul li:hover a{
+        font-weight: bold;
+      }
+
+      /* 드롭 다운 */
+
+      #sub_menu {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        background: white;
+        width: 105px;
+        opacity: 0;
+        visibillity: hidden;
+        text-align: center;
+      }
+
+      #sub_menu > li {
+        padding: 10px;
+        border-bottom: 1px solid gray;
+      }
+
+      #sub_menu > li > a {
+        color: black;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 15px;
+      }
+
+      #main_menu > li:hover #sub_menu {
+        opacity: 1;
+        visibility: visible;
+      }
+
+      /* 드롭 다운 */
+
+      #contents {
+        margin: 0 auto;
+        margin-top: 120px;
+        margin-left: 37px;
+        margin-bottom: 151px;
+        text-align: center;
+      }
+
+      #bg1 {
+        margin-bottom: 100px;
+      }
+
+      #button {
+        font-weight : bold;
+        width : 130px;
+        font-size : 15px;
+        color : white;
+        background-color: #3e0b07;
+        border-radius: 30px;
+        padding : 10px;
+        text-align : center;
+        display: block;
+        margin: 0px auto;
+        margin-top: 20px;
+      }
+
+      #button:hover {
+        font-weight : bold;
+        width : 130px;
+        font-size : 15px;
+        color : #3e0b07;
+        background-color: #ffffff;
+        border-radius: 30px;
+        padding : 10px;
+        text-align : center;
+        display: block;
+        margin: 0px auto;
+        margin-top: 20px;
+      }
+
+      footer {
+        width: 100%;
+        height: 50px;
+        background-color : #0e0806;
+      }
+
+      #address {
+        color: white;
+        text-align: center;
+        font-size: 13px;
+        height: 50px;
+        line-height: 50px;
+        letter-spacing: 2px;
+      }
+
+      a:link {
+        text-decoration: none;
+        color: #ffe100;
+      }
+
+      a:visited {
+        text-decoration: none;
+        color: #ffe100;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: #9C5B36;
+
+      }
+
+      a:active {
+        text-decoration: none;
+        color: #ffe100;
+      }
+
+
+      @media (max-width:620px) {
+
+        body {
+          background-image : url('./img/bg5.jpg');
+        }
+
+        header {
+          width: 620px;
+          height: 100px;
+          margin: 0 auto;
+          margin-top: 30px;
+        }
+
+
+        #logo {
+          float: left;
+          margin-left: 25px;
+          margin-right: 15px;
+          margin-top: 20px;
+        }
+
+        #logo > a > img {
+          width: 135px;
+        }
+
+        #main_menu > li {
+          display: inline-block;
+          margin-left: 8px;
+          position: relative;
+          font-size: 12px;
+        }
+
+        #bg1 {
+          width : 80%;
+        }
+
+        #menus {
+          float: left;
+        }
+
+        /* 드롭 다운 */
+
+        #sub_menu {
+          width: 70px;
+        }
+
+        #sub_menu > li {
+          padding: 6px;
+          border-bottom: 1px solid gray;
+        }
+
+        #sub_menu > li > a {
+          font-size: 11px;
+        }
+
+
+        #contents {
+          margin: 0 auto;
+          margin-top: 80px;
+          margin-left: 20px;
+          margin-bottom: 212px;
+        }
+
+        footer {
+          width: 100%;
+          height: 50px;
+          background-color : #0e0806;
+        }
+
+        #address {
+          font-size: 11px;
+          height: 50px;
+          line-height: 50px;
+          letter-spacing: 2px;
+        }
+
+      }
+
+    </style>
+
+  <body>
+
+    <header>
+      <div id="logo">
+        <a href="index.html"><img src="./img/logo.png"></a>
+      </div>
+      <nav id='menus'>
+        <ul id='main_menu'>
+          <li><a href="sub1.html">CHARACTERS</a></li>
+          <li><a href="sub2.html">SYNOPSIS</a></li>
+          <li><a href="sub3.html">QUOTES</a></li>
+          <li><a href="sub4.html">PIC</a>
+            <ul id='sub_menu'>
+              <li><a href="sub6.html">POSTER</a></li>
+              <li><a href="sub7.html">STILL CUT</a></li>
+            </ul>
+          </li>
+          <li><a href="sub5.html">TRAILER</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id='contents'>
+      <img id='bg1' src="./img/gun.png">
+
+      <div id='button'
+      OnClick="location.href ='sub6.html'"
+      style="cursor:pointer; ">
+        POSTER >
+      </div>
+
+      <div id='button'
+      OnClick="location.href ='sub7.html'"
+      style="cursor:pointer; ">
+        STILL CUT >
+      </div>
+    </section>
+
+
+
+    <div class="clear"></div> <!-- float 속성 해제 -->
+
+    <footer>
+      <div id="footer_box">
+        <p id='address'>
+          COPYRIGHT 2021 ⓒ HYOIN WOO ALL RIGHTS RESERVED.
+        </p>
+      </div>
+    </footer>
+
+
+  </body>
+</html>
